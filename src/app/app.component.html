@@ -1,0 +1,11 @@
+<span>I am first span</span>
+<hr>
+<ng-container #vc></ng-container>
+<hr>
+<ng-container [ngTemplateOutlet]="tpl"></ng-container>
+<hr>
+<span>I am last span</span>
+<ng-template #tpl>
+  <span>I am span in template</span>
+</ng-template>
+<button (click)="createDynamic()">Create Dynamic Component</button>
